@@ -21,13 +21,13 @@ const MessagesWidget = ({ className = "" }: MessagesWidgetProps) => {
         {messageStats.map((stat, index) => (
           <div key={index} className="flex flex-col items-center">
             <div
-              className={`w-[102px] h-[156px] rounded-full ${stat.color} flex items-center justify-center mb-4`}
+              className={`w-20 h-32 lg:w-24 lg:h-36 xl:w-[102px] xl:h-[156px] rounded-full ${stat.color} flex items-center justify-center mb-4`}
             >
-              <span className="text-white text-center font-inter font-bold text-3xl leading-normal capitalize">
+              <span className="text-white text-center font-inter font-bold text-xl lg:text-2xl xl:text-3xl leading-normal capitalize">
                 {stat.value}
               </span>
             </div>
-            <div className="text-white text-center font-inter font-medium text-xs leading-normal capitalize opacity-90">
+            <div className="text-white text-center font-inter font-medium text-xs leading-normal capitalize opacity-90 text-center">
               {stat.label}
             </div>
           </div>
