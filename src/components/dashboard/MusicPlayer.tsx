@@ -8,8 +8,8 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
       className={`rounded-2xl border border-white/30 bg-white/20 backdrop-blur-sm p-4 ${className}`}
     >
       {/* Album art and info */}
-      <div className="flex gap-4 mb-6">
-        <div className="w-[99px] h-[99px] bg-white rounded-2xl overflow-hidden flex-shrink-0">
+      <div className="flex gap-3 lg:gap-4 mb-4 lg:mb-6">
+        <div className="w-20 h-20 lg:w-[99px] lg:h-[99px] bg-white rounded-xl lg:rounded-2xl overflow-hidden flex-shrink-0">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/38bf5b0b9ae6cb6130e1b1207bdde6cc4e8f8bcc?placeholderIfAbsent=true"
             alt="Album cover"
@@ -17,11 +17,11 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
           />
         </div>
 
-        <div className="flex-1 space-y-2">
+        <div className="flex-1 space-y-1 lg:space-y-2 min-w-0">
           <div className="text-white font-inter font-medium text-xs leading-normal capitalize opacity-70">
             Now Playing
           </div>
-          <div className="text-white font-inter font-bold text-base leading-5 capitalize">
+          <div className="text-white font-inter font-bold text-sm lg:text-base leading-5 capitalize truncate">
             Lost in the Moment – NF
           </div>
           <div className="text-white font-inter font-medium text-xs leading-normal capitalize">
