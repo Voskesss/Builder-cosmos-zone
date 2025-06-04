@@ -21,12 +21,12 @@ const Dashboard = ({ className = "" }: DashboardProps) => {
         background: "linear-gradient(117deg, #DCC3A5 0%, #004B60 118.87%)",
       }}
     >
-      {/* Main container with rounded corners */}
-      <div className="w-full h-screen rounded-[48px] relative p-6">
+      {/* Main container */}
+      <div className="w-full min-h-screen p-6">
         {/* Header section */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-8">
           {/* Logo */}
-          <div className="w-19 h-14">
+          <div className="w-19 h-14 flex-shrink-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/b00cdc5057e863a3ed5cb701e8a8ecb78c910866?placeholderIfAbsent=true"
               alt="Logo"
@@ -35,7 +35,7 @@ const Dashboard = ({ className = "" }: DashboardProps) => {
           </div>
 
           {/* Navigation with back arrow and dashboard title */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-1 justify-start ml-6">
             <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
               <svg
                 width="17"
@@ -50,40 +50,40 @@ const Dashboard = ({ className = "" }: DashboardProps) => {
                 />
               </svg>
             </div>
-            <div className="text-white text-center font-inter font-semibold text-3xl leading-[42px] uppercase">
+            <div className="text-white font-inter font-semibold text-3xl leading-[42px] uppercase">
               dashboard
             </div>
           </div>
 
           {/* Toggle switch */}
-          <ToggleSwitch className="w-54 h-15" />
+          <ToggleSwitch className="flex-shrink-0" />
 
           {/* Time display */}
-          <TimeDisplay className="w-30 h-16" />
+          <TimeDisplay className="flex-shrink-0 ml-6" />
         </div>
 
         {/* Main grid layout */}
-        <div className="grid grid-cols-12 gap-6 h-full">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
           {/* Left column */}
-          <div className="col-span-3 space-y-6">
-            <GreetingCard className="w-full h-31" />
-            <WeatherWidget className="w-full h-44" />
-            <EmailWidget className="w-full h-25" />
-            <MessagesWidget className="w-full h-65" />
+          <div className="xl:col-span-3 space-y-6">
+            <GreetingCard />
+            <WeatherWidget />
+            <EmailWidget />
+            <MessagesWidget />
           </div>
 
           {/* Center column */}
-          <div className="col-span-5 space-y-6">
-            <ChatInterface className="w-full h-[434px]" />
-            <div className="grid grid-cols-2 gap-6">
-              <MusicPlayer className="w-full h-65" />
-              <DailyRoutine className="w-full h-65" />
+          <div className="xl:col-span-5 space-y-6">
+            <ChatInterface />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <MusicPlayer />
+              <DailyRoutine />
             </div>
           </div>
 
           {/* Right column */}
-          <div className="col-span-4">
-            <CalendarWidget className="w-full h-[711px]" />
+          <div className="xl:col-span-4">
+            <CalendarWidget />
           </div>
         </div>
       </div>
