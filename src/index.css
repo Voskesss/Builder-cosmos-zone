@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    --dashboard-primary: #004b60;
+    --dashboard-gradient-start: #dcc3a5;
+    --dashboard-gradient-end: #004b60;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
