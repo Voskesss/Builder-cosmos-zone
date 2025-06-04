@@ -44,12 +44,13 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
       </div>
 
       {/* Controls */}
-      <div className="flex items-center justify-center gap-6">
+      <div className="flex items-center justify-center gap-4 lg:gap-6">
         {/* Repeat */}
-        <button className="p-2">
+        <button className="p-1 lg:p-2">
           <svg
-            width="24"
-            height="24"
+            width="20"
+            height="20"
+            className="lg:w-6 lg:h-6"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
