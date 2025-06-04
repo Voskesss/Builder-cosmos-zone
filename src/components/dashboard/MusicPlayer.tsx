@@ -67,10 +67,11 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
         </button>
 
         {/* Previous */}
-        <button className="p-2">
+        <button className="p-1 lg:p-2">
           <svg
-            width="26"
-            height="26"
+            width="22"
+            height="22"
+            className="lg:w-6 lg:h-6"
             viewBox="0 0 26 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -87,10 +88,11 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
         </button>
 
         {/* Play/Pause */}
-        <button className="w-15 h-15 bg-[#004B60] rounded-full flex items-center justify-center">
+        <button className="w-12 h-12 lg:w-15 lg:h-15 bg-[#004B60] rounded-full flex items-center justify-center">
           <svg
-            width="28"
-            height="28"
+            width="24"
+            height="24"
+            className="lg:w-7 lg:h-7"
             viewBox="0 0 28 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -107,10 +109,11 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
         </button>
 
         {/* Next */}
-        <button className="p-2">
+        <button className="p-1 lg:p-2">
           <svg
-            width="26"
-            height="26"
+            width="22"
+            height="22"
+            className="lg:w-6 lg:h-6"
             viewBox="0 0 26 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -127,10 +130,11 @@ const MusicPlayer = ({ className = "" }: MusicPlayerProps) => {
         </button>
 
         {/* Shuffle */}
-        <button className="p-2">
+        <button className="p-1 lg:p-2">
           <svg
-            width="24"
-            height="24"
+            width="20"
+            height="20"
+            className="lg:w-6 lg:h-6"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
