@@ -15,6 +15,8 @@ interface DashboardProps {
 }
 
 const Dashboard = ({ className = "" }: DashboardProps) => {
+  const navigate = useNavigate();
+
   return (
     <div
       className={`min-h-screen w-full relative overflow-hidden ${className}`}
