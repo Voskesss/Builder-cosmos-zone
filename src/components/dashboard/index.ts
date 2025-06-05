@@ -9,3 +9,7 @@ export { default as DailyRoutine } from "./DailyRoutine";
 export { default as CalendarWidget } from "./CalendarWidget";
 export { default as ToggleSwitch } from "./ToggleSwitch";
 export { default as ChatInterface } from "./ChatInterface";
+
+// Export main views
+export { default as ApplicationView } from "../ApplicationView";
+export { default as MainScreen } from "../MainScreen";
