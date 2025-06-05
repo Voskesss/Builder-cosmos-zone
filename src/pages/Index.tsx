@@ -5,10 +5,10 @@ import Dashboard from "../components/dashboard/Dashboard";
 const Index = () => {
   const navigate = useNavigate();
 
-  // You can uncomment this if you want to redirect to ApplicationView by default
-  // useEffect(() => {
-  //   navigate('/application');
-  // }, [navigate]);
+  // Redirect to ApplicationView by default to showcase the new component
+  useEffect(() => {
+    navigate("/application");
+  }, [navigate]);
 
   return <Dashboard />;
 };
