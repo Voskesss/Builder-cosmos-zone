@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import TimeDisplay from "./TimeDisplay";
 import GreetingCard from "./GreetingCard";
 import WeatherWidget from "./WeatherWidget";
