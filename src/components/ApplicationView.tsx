@@ -75,44 +75,194 @@ const ApplicationView = ({ className = "" }: ApplicationViewProps) => {
           {/* Dashboard Preview */}
           <div className="relative">
             <div className="rounded-3xl border border-white/30 bg-white/20 backdrop-blur-sm p-3">
-              {/* Dashboard preview image placeholder */}
+              {/* Dashboard preview with detailed mini components */}
               <div className="w-full h-80 lg:h-96 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl mb-4 flex items-center justify-center relative overflow-hidden">
-                {/* Mini dashboard preview */}
-                <div className="absolute inset-4 grid grid-cols-12 gap-2">
-                  {/* Mini time display */}
-                  <div className="col-span-12 flex justify-between items-start mb-2">
-                    <div className="w-8 h-6 bg-white/20 rounded"></div>
+                {/* Mini dashboard preview with realistic components */}
+                <div className="absolute inset-3 text-white text-xs">
+                  {/* Header */}
+                  <div className="flex justify-between items-center mb-3">
+                    <div className="flex items-center gap-1">
+                      <div className="w-4 h-3 bg-orange-400 rounded-sm"></div>
+                      <div className="w-6 h-2 bg-white/20 rounded"></div>
+                      <div className="text-[8px] font-bold">DASHBOARD</div>
+                    </div>
                     <div className="text-right">
-                      <div className="w-12 h-4 bg-white/30 rounded mb-1"></div>
-                      <div className="w-16 h-2 bg-white/20 rounded"></div>
+                      <div className="text-[10px] font-bold">8:45</div>
+                      <div className="text-[6px] opacity-70">
+                        FRIDAY / APRIL 14
+                      </div>
                     </div>
                   </div>
 
-                  {/* Mini widgets grid */}
-                  <div className="col-span-3 space-y-2">
-                    <div className="h-12 bg-white/15 rounded-lg"></div>
-                    <div className="h-16 bg-white/15 rounded-lg"></div>
-                    <div className="h-8 bg-white/15 rounded-lg"></div>
-                    <div className="h-20 bg-white/15 rounded-lg"></div>
-                  </div>
+                  {/* Main grid */}
+                  <div className="grid grid-cols-12 gap-1 h-full">
+                    {/* Left column */}
+                    <div className="col-span-3 space-y-1">
+                      {/* Good Morning card */}
+                      <div className="h-8 bg-white/15 rounded-md p-1">
+                        <div className="text-[6px] mb-1">Good Morning!</div>
+                        <div className="text-[4px] opacity-70">
+                          Hope you had a great night
+                        </div>
+                      </div>
 
-                  <div className="col-span-6 space-y-2">
-                    <div className="h-32 bg-white/10 rounded-lg flex items-center justify-center">
-                      <div className="w-16 h-16 border-2 border-white/30 rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="h-20 bg-white/15 rounded-lg"></div>
-                      <div className="h-20 bg-white/15 rounded-lg"></div>
-                    </div>
-                  </div>
+                      {/* Weather */}
+                      <div className="h-12 bg-white/15 rounded-md p-1 flex">
+                        <div>
+                          <div className="text-[8px] font-bold text-[#004B60]">
+                            72°
+                          </div>
+                          <div className="text-[4px]">New York, NY</div>
+                        </div>
+                        <div className="ml-auto">
+                          <div className="w-4 h-4 bg-yellow-300 rounded-full opacity-60"></div>
+                        </div>
+                      </div>
 
-                  <div className="col-span-3">
-                    <div className="h-full bg-white/15 rounded-lg"></div>
+                      {/* Email */}
+                      <div className="h-6 bg-white/15 rounded-md p-1 flex items-center gap-1">
+                        <div className="w-2 h-2 bg-white/30 rounded"></div>
+                        <div className="text-[4px]">3 emails today</div>
+                      </div>
+
+                      {/* Messages */}
+                      <div className="h-16 bg-white/15 rounded-md p-1">
+                        <div className="text-[4px] mb-1">Messages</div>
+                        <div className="flex justify-between">
+                          <div className="text-center">
+                            <div className="w-3 h-6 bg-[#718777] rounded-full flex items-center justify-center">
+                              <span className="text-[6px] font-bold">32</span>
+                            </div>
+                            <div className="text-[3px] mt-1">Unread</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="w-3 h-6 bg-[#435F4F] rounded-full flex items-center justify-center">
+                              <span className="text-[6px] font-bold">02</span>
+                            </div>
+                            <div className="text-[3px] mt-1">Mentions</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="w-3 h-6 bg-[#718777] rounded-full flex items-center justify-center">
+                              <span className="text-[6px] font-bold">12</span>
+                            </div>
+                            <div className="text-[3px] mt-1">Today</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Center column */}
+                    <div className="col-span-6 space-y-1">
+                      {/* Chat interface */}
+                      <div className="h-24 bg-white/10 rounded-md flex items-center justify-center relative">
+                        <div className="w-8 h-8 border border-white/30 rounded-full"></div>
+                        <div className="absolute bottom-1 left-1 right-1">
+                          <div className="h-2 bg-white/15 rounded text-[4px] flex items-center pl-1">
+                            TYPE ANYTHING...
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Bottom row - Music and Daily Routine */}
+                      <div className="grid grid-cols-2 gap-1 h-12">
+                        {/* Music Player */}
+                        <div className="bg-white/15 rounded-md p-1">
+                          <div className="flex gap-1 mb-1">
+                            <div className="w-3 h-3 bg-white rounded-sm"></div>
+                            <div>
+                              <div className="text-[4px]">
+                                Lost In The Moment
+                              </div>
+                              <div className="text-[3px] opacity-70">
+                                billie elish
+                              </div>
+                            </div>
+                          </div>
+                          <div className="flex justify-center gap-1 items-center">
+                            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+                            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+                            <div className="w-2 h-2 bg-[#004B60] rounded-full"></div>
+                            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+                            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+                          </div>
+                        </div>
+
+                        {/* Daily Routine */}
+                        <div className="bg-white/15 rounded-md p-1">
+                          <div className="text-[4px] mb-1">Daily Routine</div>
+                          <div className="space-y-1">
+                            <div className="flex items-center gap-1">
+                              <div className="w-1 h-1 bg-[#004B60] rounded-full"></div>
+                              <div className="text-[3px]">7:00am – Wake up</div>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <div className="w-1 h-1 bg-white rounded-full"></div>
+                              <div className="text-[3px]">
+                                9:00am – Start work
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                              <div className="text-[3px]">
+                                06:00 pm – Wrap up
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right column - Calendar */}
+                    <div className="col-span-3">
+                      <div className="h-full bg-white/15 rounded-md p-1">
+                        <div className="text-[4px] text-center mb-1">
+                          Calendar
+                        </div>
+
+                        {/* Week days */}
+                        <div className="grid grid-cols-7 gap-px mb-1 text-[3px] text-center">
+                          <div>S</div>
+                          <div>S</div>
+                          <div>M</div>
+                          <div>T</div>
+                          <div>W</div>
+                          <div>T</div>
+                          <div>F</div>
+                        </div>
+
+                        {/* Calendar grid */}
+                        <div className="grid grid-cols-7 gap-px text-[3px] text-center mb-2">
+                          {[
+                            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+                            16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
+                            29, 30,
+                          ].map((day, i) => (
+                            <div
+                              key={i}
+                              className={`${day === 14 ? "bg-[#004B60] rounded-full w-2 h-2 flex items-center justify-center text-white" : ""}`}
+                            >
+                              {day === 14 ? "14" : day}
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Today Tasks */}
+                        <div className="text-[4px] mb-1">Today Tasks</div>
+                        <div className="space-y-1">
+                          <div className="h-2 bg-white/10 rounded border-l-2 border-[#004B60] pl-1 text-[3px] flex items-center">
+                            07:00 pm UI/UX design meeting
+                          </div>
+                          <div className="h-2 bg-white/10 rounded border-l-2 border-[#004B60] pl-1 text-[3px] flex items-center">
+                            07:00 pm UI/UX design meeting
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                {/* Overlay to show it's a preview */}
-                <div className="absolute inset-0 bg-black/10 rounded-3xl"></div>
+                {/* Subtle overlay */}
+                <div className="absolute inset-0 bg-black/5 rounded-3xl"></div>
               </div>
 
               <button
