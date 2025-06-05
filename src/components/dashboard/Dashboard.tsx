@@ -39,7 +39,10 @@ const Dashboard = ({ className = "" }: DashboardProps) => {
 
           {/* Navigation with back arrow and dashboard title */}
           <div className="flex items-center gap-3 flex-1 justify-start ml-6">
-            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+            <button
+              onClick={() => navigate("/application")}
+              className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center hover:bg-white/30 transition-colors"
+            >
               <svg
                 width="17"
                 height="16"
@@ -52,12 +55,11 @@ const Dashboard = ({ className = "" }: DashboardProps) => {
                   fill="white"
                 />
               </svg>
-            </div>
+            </button>
             <div className="text-white font-inter font-semibold text-3xl leading-[42px] uppercase">
               dashboard
             </div>
           </div>
-
           {/* Toggle switch */}
           <ToggleSwitch className="flex-shrink-0" />
 
