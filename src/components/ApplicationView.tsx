@@ -277,36 +277,57 @@ const ApplicationView = ({ className = "" }: ApplicationViewProps) => {
           {/* Main Screen Preview */}
           <div className="relative">
             <div className="rounded-3xl border border-white/30 bg-white/20 backdrop-blur-sm p-3">
-              {/* Main screen preview placeholder */}
+              {/* Main screen preview with detailed components */}
               <div className="w-full h-80 lg:h-96 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl mb-4 flex items-center justify-center relative overflow-hidden">
                 {/* Mini main screen preview */}
-                <div className="absolute inset-4">
+                <div className="absolute inset-3 text-white text-xs">
                   {/* Header */}
                   <div className="flex justify-between items-center mb-4">
-                    <div className="w-8 h-6 bg-white/20 rounded"></div>
-                    <div className="flex gap-4">
-                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-4 h-3 bg-orange-400 rounded-sm"></div>
+                      <div className="w-2 h-2 bg-white/20 rounded"></div>
                     </div>
+
+                    {/* Menu icons */}
+                    <div className="flex gap-1">
+                      <div className="w-2 h-2 bg-white/20 rounded"></div>
+                      <div className="w-2 h-2 bg-white/20 rounded"></div>
+                      <div className="w-2 h-2 bg-white/20 rounded"></div>
+                      <div className="w-2 h-2 bg-white/20 rounded"></div>
+                    </div>
+
                     <div className="text-right">
-                      <div className="w-12 h-4 bg-white/30 rounded mb-1"></div>
-                      <div className="w-16 h-2 bg-white/20 rounded"></div>
+                      <div className="text-[6px] font-bold">8:45</div>
+                      <div className="text-[4px] opacity-70">
+                        FRIDAY / APRIL 14
+                      </div>
                     </div>
                   </div>
 
                   {/* Main content area */}
-                  <div className="space-y-2 flex-1">
-                    <div className="h-32 bg-white/10 rounded-lg flex items-center justify-center">
-                      <div className="w-20 h-20 border-2 border-white/30 rounded-full"></div>
+                  <div className="flex-1 flex items-center justify-center">
+                    <div className="bg-white/15 rounded-lg p-2 w-full max-w-24">
+                      {/* Glowing orb */}
+                      <div
+                        className="flex items-center justify-center mb-2"
+                        style={{ height: "60px" }}
+                      >
+                        <div className="relative">
+                          <div className="w-8 h-8 border border-white/30 rounded-full"></div>
+                          <div className="absolute inset-0 w-8 h-8 border border-white/10 rounded-full blur-sm"></div>
+                        </div>
+                      </div>
+
+                      {/* Input area */}
+                      <div className="h-3 bg-white/10 rounded text-[4px] flex items-center pl-1">
+                        TYPE ANYTHING...
+                      </div>
                     </div>
-                    <div className="h-12 bg-white/15 rounded-lg"></div>
                   </div>
                 </div>
 
-                {/* Overlay to show it's a preview */}
-                <div className="absolute inset-0 bg-black/10 rounded-3xl"></div>
+                {/* Subtle overlay */}
+                <div className="absolute inset-0 bg-black/5 rounded-3xl"></div>
               </div>
 
               <button
